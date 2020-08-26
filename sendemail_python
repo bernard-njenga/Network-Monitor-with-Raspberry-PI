@@ -4,9 +4,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 
-email_user = 'bnnjenga@zohomail.com'
-email_password = 'Menengai21'
-email_send = 'bnnjenga@telkom.co.ke'
+email_user = 'raspberry1@gmail.com'
+email_password = '#######'
+email_send = '123@gmail.com'
 
 subject = 'Network Availability User Stats - Rpi_1'
 
@@ -28,7 +28,7 @@ part.add_header('Content-Disposition',"attachment; filename= "+filename)
 
 msg.attach(part)
 text = msg.as_string()
-server = smtplib.SMTP('smtp.zoho.com',587)
+server = smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
 server.login(email_user,email_password)
 
