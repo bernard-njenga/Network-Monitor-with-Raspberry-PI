@@ -1,0 +1,11 @@
+#*/bin/bash
+
+while ! ping -c 1 -W 1 www.google.com; do
+    echo "Waiting for www.google.com - network interface might be down..."
+    sleep 10
+done
+python /home/pi/sendemail-python
+echo "email sent"
+
+ 
+
