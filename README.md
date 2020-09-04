@@ -3,7 +3,7 @@ Track how your internet Service provider is performing on their speeds and get e
 
 The project involves having a router and a raspberry device. The solution here involves the Raspberry PI doing speedtests after every 15minutes to check on the service being offered. The setup sends the logs to a csv file save locally. At the beginning of the next day, another query executes to send an email to your account sowing the stats picked so far.
 
-Happy Testing this solution.
+Happy Testing this solution. :-)  
 
 Start by updating the Raspberry PI
 #Sudo apt-get update
